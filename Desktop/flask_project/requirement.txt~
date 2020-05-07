@@ -1,0 +1,5 @@
+1)unzip flask_project1.1.tar.gz and go to core_package from terminal and then execute 
+`pip install .`
+
+2)go to backend folder from terminal and execute 
+`python run.py`
