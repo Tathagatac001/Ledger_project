@@ -5,4 +5,4 @@ jobs:
       - image: circleci/python:3.7.3 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: print("hey therevvvv")  # run the `echo` command
+      - run: pip install pandas  # run the `echo` command
