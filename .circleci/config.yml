@@ -18,4 +18,4 @@ jobs:
           command: |
             sudo pip install -r requirements.txt
             sudo pip install Werkzeug==0.16.0
-            python flask_project/backend/service/run.py
+            #python flask_project/backend/service/run.py
