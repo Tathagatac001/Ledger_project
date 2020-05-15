@@ -8,5 +8,5 @@ jobs:
       - run:
           name: Install Python deps 
           command: |
-            cd /home/ec2-user/Project/Ledger_project/flask_project/backend/service
-            pip install .
+            sudo cd /home/ec2-user/Project/Ledger_project/flask_project/backend/service
+            sudo pip install .
