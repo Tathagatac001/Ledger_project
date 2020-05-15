@@ -15,8 +15,7 @@ setup(name='webhook',
              'flask-restplus==0.13.0',
              'Werkzeug==0.16.0',
 	     'sqlalchemy',
-	     'libpq-dev',
-	     'psycopg2'
+	     'psycopg2-binary'
                 ],zip_safe=False)
 
 

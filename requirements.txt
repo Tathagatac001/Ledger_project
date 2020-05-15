@@ -1,3 +1,5 @@
-Flask
+flask
+flask_cors
 sqlalchemy
-pandas
+psycopg2-binary
+flask-restplus==0.13.0

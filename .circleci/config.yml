@@ -9,6 +9,4 @@ jobs:
           name: Install Python deps 
           command: |
             sudo pip install -r requirements.txt 
-            sudo pip install flask_project/backend/core_package/
             python flask_project/backend/service/run.py
-            sudo pip install sqlalchemy
