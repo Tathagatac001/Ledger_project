@@ -17,6 +17,7 @@ jobs:
           name: Install Python deps
           command: |
             sudo pip install -r requirements.txt
+            sudo pip install Werkzeug==0.16.0
             python flask_project/backend/service/test_run.py
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test-results
