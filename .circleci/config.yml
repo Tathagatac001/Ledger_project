@@ -9,3 +9,4 @@ jobs:
           name: Install Python deps 
           command: |
             sudo pip install -r requirements.txt 
+            python flask_project/bakend/service/run.py
