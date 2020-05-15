@@ -5,4 +5,8 @@ jobs:
       - image: circleci/python:3.7.3
     steps:
       - checkout
-      - run: sudo pip install sqlalchemy
+      - run:
+          name: Install Python deps 
+          command: |
+            cd /home/ec2-user/Project/Ledger_project/flask_project/backend/service
+            pip install .
