@@ -12,4 +12,4 @@ class CitiesTestCase(unittest.TestCase):
     self.assertEqual(response.data, json.dumps(['Amsterdam', 'San Francisco', 'Berlin', 'New York']))
 
 if __name__ == '__main__':
-unittest.main()
+    unittest.main()
