@@ -8,5 +8,5 @@ jobs:
       - run:
           name: Install Python deps 
           command: |
-            cd Project/Ledger_project/flask_project/backend/service
+            cd Ledger_project/flask_project/backend/service
             sudo pip install .
