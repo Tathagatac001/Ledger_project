@@ -8,4 +8,4 @@ jobs:
       - run:
           name: Install Python deps 
           command: |
-            sudo pip install .
+            sudo pip install requirments.txt 
