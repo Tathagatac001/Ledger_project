@@ -1,15 +1,22 @@
-from app import app
-
 import unittest
+from app import app
 import json
 
-class CitiesTestCase(unittest.TestCase):
+class BasicTestCase(unittest.TestCase):
 
-  def test_index(self):
-    tester = app.test_client(self)
-    response = tester.get('/cities.json', content_type='application/json')
-    self.assertEqual(response.status_code, 200)
-    self.assertEqual(response.data, json.dumps(['Amsterdam', 'San Francisco', 'Berlin', 'New York']))
+	def test_home(self):
+		with app.test_client() as client:
+		    # send data as POST form to endpoint
+		    sent = {'data':'sample record'}
+		    result = client.post('/receiver/post_update',data=json.dumps(sent),content_type='application/json')
+                    
+		# check result from server with expected data
+		self.assertEqual(result.status_code,200)
+
+		data = json.loads(result.get_data(as_text=True))
+		print(f"here is {data} {json.dumps(sent)}")
+               
+		self.assertEqual(data['Web_result'],'sample output')
 
 if __name__ == '__main__':
     unittest.main()
