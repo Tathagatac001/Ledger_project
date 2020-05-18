@@ -19,13 +19,7 @@ jobs:
       - run: |
           psql \
           -d $TEST_DATABASE_URL \
-          -c "create table ledger(id serial primary key,\
-		from_acc numeric not null,\
-		to_acc numeric not null,\
-		amount numeric not null,\
-		transaction_id numeric not null,\
-		transaction_datetime timestamp\
-		);"
+          -c "create table ledger(id serial primary key,from_acc numeric not null,to_acc numeric not null,amount numeric not null,transaction_id numeric not null,transaction_datetime timestamp);"
       - run:
           name: Install Python deps
           command: |
