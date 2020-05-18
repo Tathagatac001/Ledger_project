@@ -12,7 +12,7 @@ app.config.from_object('config.default')
 app.config["JSON_SORT_KEYS"] = False
 app.config.from_pyfile('config.py')
 
-Sqlalchemy ORM model
+#Sqlalchemy ORM model
 mtadta = MetaData()
 DATABASE_URI = 'postgresql://root@localhost/circle_test'
 engine = create_engine(DATABASE_URI)
