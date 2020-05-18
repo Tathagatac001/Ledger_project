@@ -20,7 +20,7 @@ mtadta.reflect(engine)
 Base = automap_base(metadata=mtadta)
 Base.prepare()
 print(Base.classes.keys())
-Transaction_Record = Base.classes.transaction_record
+Transaction_Record = Base.classes.ledger
 session = Session(engine)
 
 #Import a module / component using its blueprint handler 
