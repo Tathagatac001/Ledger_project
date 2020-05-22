@@ -43,7 +43,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "ledger" ]; then
             #git push heroku ledger
-              git push https://heroku:94eba20b-17ce-4846-8a5a-0bc3fe81dadb@git.heroku.com/ledger_project.git master 
+              git push https://heroku:94eba20b-17ce-4846-8a5a-0bc3fe81dadb@git.heroku.com/ledgerproject.git master 
               heroku pytest flask_project/backend/service/test_run.py
               heroku restart
             fi
