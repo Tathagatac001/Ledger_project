@@ -38,8 +38,8 @@ jobs:
       - deploy:
           name: Deploy Master to Heroku
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            if [ "${CIRCLE_BRANCH}" == "ledger" ]; then
               git push heroku master
-              heroku run python manage.py deploy
+              heroku pytest flask_project/backend/service/test_run.py
               heroku restart
             fi
